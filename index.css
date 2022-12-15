@@ -1,0 +1,68 @@
+
+body {
+    height: 1800px;
+    background: linear-gradient(-45deg, #653780, #9C3587, #F49F5B, #3F1651);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  /*   background-color: #2b1a33; */
+}
+html {
+    scroll-behavior: smooth;
+  }
+.main_body{
+    padding-right: 10%;
+}
+#information {
+    padding: 4%;
+    height: 100%;
+    min-height: 600px;
+    background-color: #F49F5B;
+}
+#information p{
+    text-align: justify;
+    padding-inline: 3%;
+}
+  
+#image_gen {
+    display:inline-table;
+    padding: 4%;
+    min-height: 600px;
+    height: 100%;
+    background-color: #3F1651;
+}
+
+#natal_chart {
+    padding: 4%;
+    min-height: 600px;
+    height: 100%;
+    background-color: #9C3587;
+}
+
+.next {
+    position: fixed;
+    top: 85%;
+    right: 2%;
+    height: auto;
+    width: 60px;
+    transform: rotate(90deg);
+}
+.back {
+    position: fixed;
+    top: 15%;
+    right: 2%;
+    height: auto;
+    width: 60px;
+    transform: rotate(270deg);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

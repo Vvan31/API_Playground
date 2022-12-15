@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Playground</title>
+    <link rel="stylesheet" href="index.css">
+   <!--  <script type="module" src="deepai.min.js"></script> -->
+   <script src="https://cdnjs.deepai.org/deepai.min.js"></script>
+    <script>
+       
+        function myFunction() {
+/*             var imageGeneratedURL = null;
+           
+            deepai.setApiKey('-c946a4e47553');
+
+            (async function() {
+                var resp = await deepai.callStandardApi("surreal-graphics-generator", {
+                        text: "Cat",
+                });
+                console.log(resp);
+
+                const myObj = JSON.parse(resp);
+                imageGeneratedURL = myObj.;
+            })()
+            document.getElementById("image").src = imageGeneratedURL;  */
+        }
+    </script> 
+</head>
+<body>
+    <div class="main_body">
+        <div id="information">
+            <h1>Natal Card AI Generated Image.</h1>
+            <h2>What is Natal Card?</h2>
+            <p>The Astrological Birth Chart, or Natal Chart, uses the exact date, time, and location
+                 of your birth to re-create a snapshot of the sky at your precise moment of arrival.¹</p>
+            <p>In your Natal Chart you'll find the exact position of the planets, astral bodies, and
+                 zodiac signs at the time you were born. All of these positions and aspects are some
+                  of the "parts" that make up a "whole"--you!²</p>
+            <p> If you donn't know your Natal Chart you can use this free calculator.</p>
+            
+            <form action="#natal_chart">
+                <input type="submit" value="Get my Natal Chart" />
+            </form>
+
+            <h2>What does the planets represent?</h2>
+            <p></p>
+
+            <form action="#image_gen">
+                <input type="submit" value="Next" />
+            </form>
+        </div>
+
+        <div id="image_gen">
+            <input id="inputField" type="text"></input>
+            <button id="clickMe" onclick="myFunction()">Try it</button>
+            <img id="image" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="AI Generated Image">
+            <!-- <form action="#information">
+                <input type="submit" value="Back" />
+            </form> -->
+            <a href="#information">
+                <img src="/img/arrow.png" class="back">
+            </a>
+            <a href="#natal_chart">
+                <img src="/img/arrow.png" class="next">
+            </a>
+        </div>
+
+        <div id="natal_chart">
+            <a href="https://justastrologythings.com/pages/chart/" target="_blank">Natal Chart Calculator</a>
+            <embed type="text/html" src="https://justastrologythings.com/pages/chart/"  width="95%" height="520px">
+            <form action="#image_gen">
+                <input type="submit" value="Go Back" />
+            </form>
+        </div>
+        
+    </div>
+</body>
+</html>
