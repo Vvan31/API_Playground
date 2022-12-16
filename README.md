@@ -11,6 +11,7 @@
   <a href="#credits">Credits</a> •
   <a href="#related">Related</a> •
 </p>
+
 ![image](https://user-images.githubusercontent.com/71792220/208081467-9149fc87-a5ea-4396-a167-5608b233fd50.png)
 ![image](https://user-images.githubusercontent.com/71792220/208081554-86e30f0c-7fdf-400f-8a3d-8dc876fa2a5b.png)
 ![image](https://user-images.githubusercontent.com/71792220/208081607-125217af-a569-41af-a785-49e59219bf26.png)
@@ -19,65 +20,48 @@
 
 ## Key Features
 
-* What will the project do?
-* Who are the main users
-* What kinds of problems will they solve with the system?
-* Will this be a GUI design? Why did you choose this modality
-* What are your basic design decisions? (color scheme, page layout, CSS design.)
+1. What is your project about?
+  	- Using Natal Chart information to generate an AI image.
+2. What are you using this project for / What is the purpose of this project
+  	- Discover awesome APIs and practice web front-end. 
+3.  Why did you decide to make this project?
+  	- I had a similar proyect that I did't finished. 
+4.  What reference did you use?
+ 	- <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax">W3schools parallax scroll</a>
+5.  What libraries/technology/ api you used
+	- <a href="https://deepai.org/machine-learning-model/stable-diffusion">DeepAI</a>
+	
+6.  What did you learn? What was the most challenging part?
+	- I learn CSS scrolls and a lot about astrology. 
+	- The most challenging part was to choose an API and implement it. 
 
 
 
 ## How To Use
 
-To clone and run this application, you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
+To clone and run this eb page, you'll only need WIFI acces, a browser and you're good to go!
 
 ```bash
 # Clone this repository
-$ git clone https://github.com/amitmerchant1990/electron-markdownify
+$ git clone https://github.com/Vvan31/API_Playground
 
 # Go into the repository
-$ cd electron-markdownify
+$ cd API_Playground
 
-# Install dependencies
-$ npm install
-
-# Run the app
-$ npm start
+# Run the file on a browser
+$ firefox &lt;index.html
 ```
 
-> **Note**
-> If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
-
-
-## Download
-
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Markdownify for Windows, macOS and Linux.
-
-## Emailware
-
-Markdownify is an [emailware](https://en.wiktionary.org/wiki/emailware). Meaning, if you liked using this app or it has helped you in any way, I'd like you send me an email at <bullredeyes@gmail.com> about anything you'd want to say about this software. I'd really appreciate it!
-
 ## Credits
-
-This software uses the following open source packages:
-
-- [Electron](http://electron.atom.io/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
-- [showdown](http://showdownjs.github.io/showdown/)
-- [CodeMirror](http://codemirror.net/)
-- Emojis are taken from [here](https://github.com/arvida/emoji-cheat-sheet.com)
-- [highlight.js](https://highlightjs.org/)
-
-Callout for useful Tutorials/Examples/Docs. 
-<br>
-<a href="https://youtu.be/clH7SxG-Vdc"> Spring Boot Firebase User Application </a>
-
-<a href="https://www.youtube.com/embed/ug_89Gx0Ow8">
-	<img src="https://user-images.githubusercontent.com/71792220/202602482-e246b970-5461-4794-93e9-349a804dd544.png" width="160">
-</a>
-
+- <a style="font-size:10px"; href="https://www.thecut.com/article/astrology-birth-chart-meaning-analysis.html">thecut</a> 
+- <a style="font-size:10px"; href="https://astro.cafeastrology.com/natal.php ">cafeastrology</a>
+- <a style="font-size:10px"; href="https://justastrologythings.com/pages/planets/moon/index.php">justastrologythings</a>
+- <a style="font-size:10px"; href="https://www.astrograph.com/learning-astrology/sun.php ">astrograph</a>
+- <a style="font-size:10px"; href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax  "></a>
+- <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/sun">Sun Vectors by Vecteezy</a>  
+- <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/mercury">Mercury Vectors by Vecteezy</a>
+- <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a>
 
 ## Related
 
-[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify
+[markdownify-web](https://github.com/amitmerchant1990/markdownify-web) - Web version of Markdownify README tempalte
