@@ -19,6 +19,9 @@ html {
 }
 .main_body{
     padding: 2.5%;
+    width: 1200px;
+    min-width: 400px;
+    max-width: calc(100% - 50px);
 }
 .parallax{
     background-image: url("/img/chart.jpg");
@@ -66,12 +69,20 @@ border: 5px solid #555;
 }
 
 .planet_inputs{
-  width: 90%;
+  width: 300%;
+  /* min-width: 400px; */
   display: flex;
   justify-content: space-around;
+  align-items: center;
   height: fit-content;
   margin: 5%;
+  max-width: calc(100% - 50px);
 }
+/* 
+@media only screen and (min-width: 460px) {
+  .planet_inputs{
+    display: inline-block;
+  } */
 
 #natal_chart {
     padding: 4%;
