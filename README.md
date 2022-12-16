@@ -39,7 +39,7 @@
 
 ## How To Use
 
-To clone and run this eb page, you'll only need WIFI acces, a browser and you're good to go!
+To clone and run this web page, you'll only need WIFI acces, a browser and you're good to go!
 
 ```bash
 # Clone this repository
@@ -53,14 +53,15 @@ $ firefox &lt;index.html
 ```
 
 ## Credits
-- <a style="font-size:10px"; href="https://www.thecut.com/article/astrology-birth-chart-meaning-analysis.html">thecut</a> 
-- <a style="font-size:10px"; href="https://astro.cafeastrology.com/natal.php ">cafeastrology</a>
-- <a style="font-size:10px"; href="https://justastrologythings.com/pages/planets/moon/index.php">justastrologythings</a>
-- <a style="font-size:10px"; href="https://www.astrograph.com/learning-astrology/sun.php ">astrograph</a>
-- <a style="font-size:10px"; href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax  "></a>
-- <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/sun">Sun Vectors by Vecteezy</a>  
-- <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/mercury">Mercury Vectors by Vecteezy</a>
-- <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a>
+
+- <a href="https://www.thecut.com/article/astrology-birth-chart-meaning-analysis.html">thecut</a> 
+- <a href="https://astro.cafeastrology.com/natal.php ">cafeastrology</a>
+- <a href="https://justastrologythings.com/pages/planets/moon/index.php">justastrologythings</a>
+- <a href="https://www.astrograph.com/learning-astrology/sun.php ">astrograph</a>
+- <a href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax ">w3schools</a>
+- <a href="https://www.vecteezy.com/free-vector/sun">Sun Vectors by Vecteezy</a>  
+- <a href="https://www.vecteezy.com/free-vector/mercury">Mercury Vectors by Vecteezy</a>
+- <a href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a>
 
 ## Related
 
