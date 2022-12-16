@@ -6,75 +6,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>API Playground</title>
     <link rel="stylesheet" href="index.css">
-   <!--  <script type="module" src="deepai.min.js"></script> -->
    <script src="https://cdnjs.deepai.org/deepai.min.js"></script>
     <script>
-       
         function myFunction() {
-/*             var imageGeneratedURL = null;
-           
+            var planet_data;
+
+            var sunOption = document.getElementById("sun");
+            var sun_value = sunOption.value;
+            planet_data = sun_value;
+
+            var moonOption = document.getElementById("moon_selector");
+            var moon_value = moonOption.value;
+            planet_data = planet_data + " " +moon_value;
+
+            var mercuryOption = document.getElementById("mercury");
+            var mercury_value = mercuryOption.value;
+            planet_data = planet_data + " " + mercury_value;
+
+            var venusOption = document.getElementById("venus_selector");
+            var venus_value = venusOption.value;
+            planet_data = planet_data + " " + venus_value;
+            console.log(planet_data);
+
+            var imageGeneratedURL = null; 
+            
             deepai.setApiKey('-c946a4e47553');
 
             (async function() {
                 var resp = await deepai.callStandardApi("surreal-graphics-generator", {
-                        text: "Cat",
+                        text: planet_data,
                 });
+                await new Promise(resolve => setTimeout(resolve, 3000));
                 console.log(resp);
 
-                const myObj = JSON.parse(resp);
-                imageGeneratedURL = myObj.;
+                imageGeneratedURL = resp.output_url;
+                document.getElementById("image").src = imageGeneratedURL; 
             })()
-            document.getElementById("image").src = imageGeneratedURL;  */
         }
     </script> 
 </head>
 <body>
     <div class="main_body">
+        <a href="#parallax_1">
+            <img src="/img/moon.png" class="sec1">
+        </a>
+        <a href="#parallax_2">
+            <img src="/img/moon.png" class="sec2">
+        </a>
+        <a href="#parallax_3">
+            <img src="/img/moon.png" class="sec3">
+        </a>
+        <div id="header">
+            <h1 class="title">Natal Chart AI Generated Image</h1>
+        </div>
+        
+        <div class="parallax" id="parallax_1"></div>
+
         <div id="information">
-            <h1>Natal Card AI Generated Image.</h1>
-            <h2>What is Natal Card?</h2>
+            <h2>What is a Natal Chart?</h2>
             <p>The Astrological Birth Chart, or Natal Chart, uses the exact date, time, and location
                  of your birth to re-create a snapshot of the sky at your precise moment of arrival.¹</p>
             <p>In your Natal Chart you'll find the exact position of the planets, astral bodies, and
                  zodiac signs at the time you were born. All of these positions and aspects are some
                   of the "parts" that make up a "whole"--you!²</p>
-            <p> If you donn't know your Natal Chart you can use this free calculator.</p>
+            <p> If you don't know your Natal Chart you can use this free calculator.</p>
             
             <form action="#natal_chart">
                 <input type="submit" value="Get my Natal Chart" />
             </form>
-
-            <h2>What does the planets represent?</h2>
-            <p></p>
-
-            <form action="#image_gen">
-                <input type="submit" value="Next" />
-            </form>
         </div>
+        <div class="parallax" ></div>
+        <h2>What does the planets represent?</h2>
+        <div id="card_wrapper">
+            <div class="wraper">
+                <h2>The Sun</h2>
+                <img src="img/sun.png" class="image">
+                <p class="text">The Sun represents the Self, one's way of being in the world. It can represent, on different levels, both the ego and the higher Self or soul purpose.⁴    
+                </p>
+                
+              <!--   <div class="overlay">
+                    <p class="text">The Sun represents the Self, one's way of being in the world. It can represent, on different levels, both the ego and the higher Self or soul purpose.⁴</p>
+                </div> -->
+            </div>
+            <div class="wraper">
+                <h2>The Moon</h2>
+                    <img src="img/moon.png" id="moon" class="image">
+                <p class="text">The moon rules the moods and emotions. The placement of the moon in your chart determines your inner self; it shapes your soul and what you need to feel emotionally secure. It controls what goes on below the surface of your personality.³ </p>
+            </div>
+            <div class="wraper">
+                <h2>Mercury</h2>
+                <img src="img/mercury.png" class="image">
+                <p class="text">Mercury rules expression and communication. It tells us how we process information, how we think, and how we learn. It governs the way you prefer to communicate and whether you prefer small or big groups of people.³ </p>
+            </div>
+            <div class="wraper">
+                <h2>Venus</h2>
+                <img src="img/mercury.png" id="venus" class="image" style="filter: sepia(1);">
+                <p class="text">Venus rules love and relationships. Your Venus sign determines how you give and feel love in both romances and friendships. It also influences what you find beautiful.³</p>
+            </div>
+        </div>
+
+        <div class="parallax" id="parallax_2"></div>
 
         <div id="image_gen">
-            <input id="inputField" type="text"></input>
-            <button id="clickMe" onclick="myFunction()">Try it</button>
-            <img id="image" src="https://www.w3schools.com/w3css/img_lights.jpg" alt="AI Generated Image">
-            <!-- <form action="#information">
-                <input type="submit" value="Back" />
-            </form> -->
-            <a href="#information">
-                <img src="/img/arrow.png" class="back">
-            </a>
-            <a href="#natal_chart">
-                <img src="/img/arrow.png" class="next">
-            </a>
+            <div class="planet_inputs">
+                <select name="sun" id="sun">
+                    <option value="sun">Sun</option>
+                    <option value="aries">aries</option>
+                    <option value="taurus">taurus</option>
+                    <option value="gemini">gemini</option>
+                    <option value="cancer">cancer</option>
+                    <option value="leo">leo</option>
+                    <option value="virgo">virgo</option>
+                    <option value="libra">libra</option>
+                    <option value="scorpio">scorpio</option>
+                    <option value="sagittarius">sagittarius</option>
+                    <option value="capricorn">capricorn</option>
+                    <option value="aquarius">aquarius</option>
+                    <option value="pisces">pisces</option>
+                </select>
+                <select name="moon" id="moon_selector">
+                    <option value="moon">Moon</option>
+                    <option value="fire">aries</option>
+                    <option value="calm">taurus</option>
+                    <option value="changing">gemini</option>
+                    <option value="empathic">cancer</option>
+                    <option value="inner fire">leo</option>
+                    <option value="structured">virgo</option>
+                    <option value="balanced">libra</option>
+                    <option value="passional">scorpio</option>
+                    <option value="optimistic spirit">sagittarius</option>
+                    <option value="disciplined">capricorn</option>
+                    <option value="independent">aquarius</option>
+                    <option value="dreamy">pisces</option>
+                </select>
+                <select name="mercury" id="mercury">
+                    <option value="mercury">Mercury</option>
+                    <option value="crude">aries</option>
+                    <option value="stubborn">taurus</option>
+                    <option value="nervous energy">gemini</option>
+                    <option value="sensitive">cancer</option>
+                    <option value="authority">leo</option>
+                    <option value="organized">virgo</option>
+                    <option value="diplomats">libra</option>
+                    <option value="see through">scorpio</option>
+                    <option value="free looking to the future">sagittarius</option>
+                    <option value="resourceful">capricorn</option>
+                    <option value="intimidating">aquarius</option>
+                    <option value="poetic">pisces</option>
+                </select>
+                <select name="venus" id="venus_selector">
+                    <option value="venus">Venus</option>
+                    <option value="self-centered">aries</option>
+                    <option value="comfortable">taurus</option>
+                    <option value="spontaneous">gemini</option>
+                    <option value="committed but moody">cancer</option>
+                    <option value="demanding">leo</option>
+                    <option value="devotion">virgo</option>
+                    <option value="kind">libra</option>
+                    <option value="fearless and possessive">scorpio</option>
+                    <option value="friendly">sagittarius</option>
+                    <option value="controlling">capricorn</option>
+                    <option value="rebellious">aquarius</option>
+                    <option value="dreamy">pisces</option>
+                </select>
+                <button id="clickMe" onclick="myFunction()">Try it</button>
+            </div>
+            <img id="image" src="https://api.deepai.org/job-view-file/a7ec3c38-7c68-4f09-980c-d2a39ed143f9/outputs/output.jpg" alt="AI Generated Image">
         </div>
 
-        <div id="natal_chart">
-            <a href="https://justastrologythings.com/pages/chart/" target="_blank">Natal Chart Calculator</a>
-            <embed type="text/html" src="https://justastrologythings.com/pages/chart/"  width="95%" height="520px">
-            <form action="#image_gen">
-                <input type="submit" value="Go Back" />
-            </form>
-        </div>
+        <div class="parallax" id="parallax_3"></div>
         
+        <div id="natal_chart">
+             <embed type="text/html" src="https://justastrologythings.com/pages/chart/"  width="95%" height="600px">
+            
+        </div>
+            <a style="font-size:10px"; href="https://www.thecut.com/article/astrology-birth-chart-meaning-analysis.html">thecut</a> 
+            <a style="font-size:10px"; href="https://astro.cafeastrology.com/natal.php ">cafeastrology</a>
+            <a style="font-size:10px"; href="https://justastrologythings.com/pages/planets/moon/index.php">justastrologythings</a>
+            <a style="font-size:10px"; href="https://www.astrograph.com/learning-astrology/sun.php ">astrograph</a>
+            <a style="font-size:10px"; href="https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_parallax  "></a>
+            <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/sun">Sun Vectors by Vecteezy</a>  
+            <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/mercury">Mercury Vectors by Vecteezy</a>
+            <a style="font-size:10px;" href="https://www.vecteezy.com/free-vector/planet">Planet Vectors by Vecteezy</a>
     </div>
 </body>
 </html>
